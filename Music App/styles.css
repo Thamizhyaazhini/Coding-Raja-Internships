@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color:black;
+    color: white;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: #fff;
+    color: #1a1a1a;
+}
+
+.btn-trial {
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: calc(100vh - 80px); 
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+} */
+
+.main-content, .main-image {
+    flex: 1;
+}
+
+.main-content {
+    padding-right: 20px;
+}
+
+.main-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.main-image {
+    width: 50%;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+.popular-artists {
+    background-color: #1a1a1a;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.popular-artists h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.artists-grid {
+    display: flex;
+    overflow-x: scroll;
+    gap: 40px;
+    justify-content: flex-start;
+    padding: 0 20px;
+    scrollbar-width: none; 
+}
+
+.artists-grid::-webkit-scrollbar {
+    display: none; 
+}
+
+
+.artist {
+    flex: 0 0 auto; 
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 200px; 
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.artist img {
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px; 
+    object-fit: cover; 
+}
+
+.artist p {
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+}  
+
+.artist-info {
+    color: white;
+}
+
+.artist-info h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.artist-info p {
+    font-size: 36px;
+    margin-bottom: 10px;
+}  
+
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: #fff;
+    color: #1a1a1a;
+}
+
+.btn-trial {
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.new-releases, .popular-artists {
+    margin-top: 40px;
+}
+
+.new-releases h2, .popular-artists h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.card-container, .artists-grid {
+    display: flex;
+    overflow-x: scroll;
+    gap: 40px;
+    padding-bottom: 10px;
+}
+
+.card, .artist {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    flex: 0 0 auto; 
+}
+.card {
+    width: 150px; /* Adjust the width as needed */
+}
+
+.card img, .artist img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card p, .artist p {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.artists-grid {
+    gap: 40px;
+}
+
+.artist {
+    width: 200px; /* Adjust the width as needed */
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.artist img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.artist-info h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.artist-info p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+

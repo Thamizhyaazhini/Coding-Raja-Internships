@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: crimson;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nav-bar .logo {
+    height: 40px; /* Adjusted logo size */
+}
+
+.nav-bar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.artist-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem 0;
+    background-color: #282828;
+}
+
+.artist-photo {
+    width: 120px; /* Adjusted photo size */
+    height: 120px; /* Adjusted photo size */
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Songs Section Styles */
+.songs {
+    padding: 2rem;
+    background-color: #121212;
+    width: 100%;
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.songs h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Sticky Song List Styles */
+.sticky-song-list {
+    width: 100%;
+    max-height: calc(100vh - 100px); /* Adjust to fit within viewport height minus header and footer */
+    overflow-y: auto;
+    background-color: #181818; /* Darker background for a sleek look */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.sticky-song-list ul {
+    padding: 0;
+    margin: 0;
+}
+
+.sticky-song-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 0.5rem;
+    background-color: #232323; /* Slightly lighter background for each item */
+}
+
+.sticky-song-list li:hover {
+    background-color: #2c2c2c;
+    color: #1DB954; /* Green accent for hover effect */
+}
+
+.sticky-song-list li span {
+    flex-grow: 1;
+    font-size: 1rem; /* Adjust font size for better readability */
+    color: #B3B3B3; /* Light gray text color */
+}
+
+.sticky-song-list li i {
+    font-size: 1.5rem;
+    color: #1DB954; /* Spotify green color for play icon */
+}
+
+/* Ensure the song list occupies the full width and is scrollable */
+.sticky-song-list-container {
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Footer (Music Player) Styles */
+.music-player {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #282828;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+    max-height: 80px; /* Set a fixed height */
+    box-sizing: border-box;
+}
+
+.track-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.track-info img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.track-details {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+
+.track-details h2 {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.audio-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.audio-controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem; /* Adjusted button size */
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    margin: 0 0.5rem; /* Reduced margin */
+}
+
+#progress-bar {
+    flex: 1;
+}
+
+.volume-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#volume-bar {
+    width: 60px; /* Adjusted volume bar width */
+}
+
+.shuffle-repeat {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}

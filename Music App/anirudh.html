@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anirudh's Playlist</title>
+    <link rel="stylesheet" href="anirudh.css">
+    <link rel="javascript" href="anirudh.js">
+</head>
+<body>
+    <header>
+        <img src="https://assets.gqindia.com/photos/65390f69d674b9b8c3ecc0dd/16:9/w_2560%2Cc_limit/Anirudh-Ravichander.jpg" width="500px" height="300px">
+        <div class="header-container">
+            <h1>Anirudh</h1>
+            <p>34,319,691 monthly listeners</p>
+            <button class="play-button" id="play-pause">Play</button>
+            <button class="follow-button">Follow</button>
+        </div>
+    </header>
+    <main>
+        <section class="popular">
+            <h2>Popular</h2>
+            <ul id="song-list">
+                <li data-path="C:\Users\thami\Downloads\Music App\songs\Enakena Yarumilaiye.mp3" data-title="Enakena Yarumilaiye">
+                    <img src="C:\Users\thami\Downloads\Music App\images\EY.jpeg" alt="Song 1">
+                    <div class="song-info">
+                        <p class="song-title">Enakena Yarum ilaiye</p>
+                        <p class="song-stats">123,456,789 &middot; 3:45</p>
+                        <!-- <button class="play-button" onclick="playMusic()">Play Music</button> -->
+                        <audio id="EY" controls src="C:\Users\thami\Downloads\Music App\songs\Enakena Yarumilaiye.mp3" type="audio/mpeg"></audio>
+                    </div>
+                </li>
+                <li data-path='C:\Users\thami\Downloads\Music App\songs\Kannana Kanne.mp3' data-title="Kannana Kanne">
+                    <img src="C:\Users\thami\Downloads\Music App\images\KK.jpeg" alt="Song 2">
+                    <div class="song-info">
+                        <p class="song-title">Kannana Kanne</p>
+                        <p class="song-stats">200,011,637 &middot; 4:51</p>
+                        <audio id="KK" controls src="C:\Users\thami\Downloads\Music App\songs\Kannana Kanne.mp3" type="audio/mpeg"></audio>
+                    </div>
+                </li>
+                <li data-path="C:\Users\thami\Downloads\Music App\songs\Life of Pazham.mp3" data-title="Life of Pazham">
+                    <img src="C:\Users\thami\Downloads\Music App\images\LP.jpeg" alt="Song 3">
+                    <div class="song-info">
+                        <p class="song-title">Life of Pazham</p>
+                        <p class="song-stats">141,683,481 &middot; 7:50</p>
+                        <audio id="LP" controls  src="C:\Users\thami\Downloads\Music App\songs\Life of Pazham.mp3" type="audio/mpeg"></audio>
+                    </div>
+                </li>
+                Add more songs similarly
+            </ul>
+        </section>
+    </main>
+</body>
+</html> 
